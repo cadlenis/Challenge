@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible"  content="IE=edge" />
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0" />
+    <title>Texto Secreto</title>
+    <link rel="shortcut icon"  href="img/favicon.ico"  type="image/x-icon" />
+    <link rel="stylesheet"  href="styles/styles.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="encriptar">
+        <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Ingresa el texto aquí en minusculas"></textarea>
+        <div class="terminos">
+          <p>Escriba solo letras minúsculas y sin acentos.</p>
+        </div>
+        <div class="botones">
+          <button class="btn-encriptar" type="button" onclick="encriptar()"> Encriptar </button>
+          <input  type="button" class="btn-desencriptar" value="Desencriptar" onclick="desencriptar()"/>
+        </div>
+      </div>
+      
+      <div class="encriptado">
+        <img src="img/imagen1.png" alt="Sin Imagen" id="imagen-uno" />
+        <div class="mensaje-encriptado" id="mensaje-encriptado">
+          <h2 id="titulo-mensaje">No hay mensajes</h2>
+          <p id="parrafo">
+            Ingresa el texto que deseas encriptar o desencriptar en minúsculas
+          </p>
+          
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
